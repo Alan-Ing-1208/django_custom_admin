@@ -1,0 +1,105 @@
+/* Background Styling */
+body {
+    background: linear-gradient(135deg, #6a00ff, #c200fb);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+/* Login Box */
+.login-container {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 350px;
+    backdrop-filter: blur(10px);
+    color: white;
+}
+
+/* Headings */
+.login-container h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.login-container p {
+    font-size: 1em;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+/* Input Group */
+.input-group {
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.input-group i {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    opacity: 0.8;
+}
+
+/* Input Fields */
+form input {
+    width: calc(100% - 30px); /* Accounts for icon space + padding */
+    padding: 12px 15px 12px 35px; /* Adjusted for icon positioning */
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    color: #333;
+    background: rgba(255, 255, 255, 0.9);
+    outline: none;
+    transition: 0.3s;
+}
+
+
+form input:focus {
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 10px #00f0ff;
+}
+
+/* Login Button */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    color: white;
+    background: linear-gradient(90deg, #6a00ff, #c200fb);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    box-shadow: 0 0 10px #9c00ff, 0 0 30px #00ffe7;
+    transform: scale(1.05);
+}
+
+/* Register Link */
+.register-link {
+    margin-top: 15px;
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+.register-link a {
+    color: #00ffe7;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}

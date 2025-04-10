@@ -1,0 +1,62 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+</html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Custom Admin Dashboard</title>
+    <link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="dashboard-body">
+
+    <aside class="sidebar">
+        <div class="sidebar-header">⚡ Neon Admin</div>
+        <ul class="nav-links">
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Users</a></li>
+            <li><a href="#">Authorization</a></li>
+            <li><a href="#">Reports</a></li>
+        </ul>
+    </aside>
+
+    <main class="main-content">
+        <header class="header">
+            <h2>Admin Dashboard</h2>
+        </header>
+
+        <section class="cards">
+            <div class="card pink">
+                <h3>Authorization</h3>
+                <p>$125.00</p>
+            </div>
+            <div class="card blue">
+                <h3>User Management</h3>
+                <p>87 Active</p>
+            </div>
+            <div class="card purple">
+                <h3>Payments</h3>
+                <p>$1,253.40</p>
+            </div>
+        </section>
+
+        <section class="chart-section">
+            <canvas id="myChart" width="400" height="200"></canvas>
+        </section>
+    </main>
+
+    <script src="{% static 'js/charts.js' %}"></script>
+
+</body>
+</html>
