@@ -21,30 +21,47 @@
         {% endif %}
     </div>
 
-<!-- Charts section -->
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-    <!-- Revenue Chart -->
-    <div class="bg-[#2c005a] rounded-2xl p-6 shadow-xl">
-        <h2 class="text-lg font-semibold mb-4">Revenue Overview</h2>
-        <canvas id="myChart" width="400" height="200"></canvas>
+<!-- Dashboard metrics and charts layout -->
+<div class="grid grid-cols-2 gap-6 mt-6">
+    <!-- Left Column -->
+    <div>
+        <!-- Total Users Card -->
+        <div class="bg-[#2c005a] rounded-2xl p-6 shadow-xl mb-6">
+            <h2 class="text-lg font-semibold mb-2">Total Users</h2>
+            <p class="text-2xl font-bold">1,253</p>
+        </div>
+
+        <!-- Total Users Chart -->
+        <div class="bg-[#2c005a] rounded-2xl p-6 shadow-xl">
+            <h2 class="text-lg font-semibold mb-4">Total Users Overview</h2>
+            <canvas id="usersChart" width="400" height="200"></canvas>
+        </div>
     </div>
 
-    <!-- Users Chart -->
-    <div class="bg-[#2c005a] rounded-2xl p-6 shadow-xl">
-        <h2 class="text-lg font-semibold mb-4">Total Users Overview</h2>
-        <canvas id="userChart" width="400" height="200"></canvas>
+    <!-- Right Column -->
+    <div>
+        <!-- Revenue Card -->
+        <div class="bg-[#2c005a] rounded-2xl p-6 shadow-xl mb-6">
+            <h2 class="text-lg font-semibold mb-2">Revenue</h2>
+            <p class="text-2xl font-bold">$12,590</p>
+        </div>
+
+        <!-- Revenue Chart -->
+        <div class="bg-[#2c005a] rounded-2xl p-6 shadow-xl">
+            <h2 class="text-lg font-semibold mb-4">Revenue Overview</h2>
+            <canvas id="myChart" width="400" height="200"></canvas>
+        </div>
     </div>
 </div>
 
-<!-- Recent Activity (new full-width row) -->
+<!-- Recent Activity (full width below charts) -->
 <div class="bg-[#2c005a] rounded-2xl p-6 shadow-xl mt-6">
     <div class="flex justify-between items-center mb-4">
         <h2 class="text-lg font-semibold">Recent Activity</h2>
         <button class="bg-[#00ffff] text-black px-3 py-1 rounded-full text-sm hover:bg-cyan-300 transition">Refresh</button>
     </div>
 
-    <div class="max-h-72 overflow-y-auto space-y-4 pr-2">
-        <!-- Activity Items -->
+    <div class="max-h-64 overflow-y-auto space-y-4 pr-2">
         <div class="flex items-start space-x-3">
             <div class="text-cyan-400 text-xl">👤</div>
             <div>
@@ -59,7 +76,21 @@
                 <p class="text-sm text-gray-300">15 minutes ago</p>
             </div>
         </div>
-        <!-- Add more as needed -->
+        <div class="flex items-start space-x-3">
+            <div class="text-yellow-400 text-xl">✏️</div>
+            <div>
+                <p><span class="font-semibold text-white">Mike</span> updated his profile</p>
+                <p class="text-sm text-gray-300">1 hour ago</p>
+            </div>
+        </div>
+        <div class="flex items-start space-x-3">
+            <div class="text-red-400 text-xl">🗑️</div>
+            <div>
+                <p><span class="font-semibold text-white">Anna</span> deleted an item</p>
+                <p class="text-sm text-gray-300">3 hours ago</p>
+            </div>
+        </div>
+        <!-- Add more items if needed -->
     </div>
 </div>
 
